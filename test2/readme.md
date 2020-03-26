@@ -8,31 +8,31 @@
 
 linear_layout.xml代码：
 
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBlack"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn1"
-            android:text="@string/a11"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn2"
-            android:layout_weight="1"
-            android:text="@string/a12"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn3"
-            android:text="@string/a13"/>
+`<?xml version="1.0" encoding="utf-8"?>`
+`<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"`
+    `android:layout_width="match_parent"`
+    `android:layout_height="match_parent"`
+    `android:background="@color/colorBlack"`
+    `android:orientation="vertical">`
+    `<LinearLayout`
+        `android:layout_width="match_parent"`
+        `android:layout_height="wrap_content">`
+        `<Button`
+            `android:layout_width="wrap_content"`
+            `android:layout_height="wrap_content"`
+            `android:id="@+id/btn1"`
+            `android:text="@string/a11"/>`
+        `<Button`
+            `android:layout_width="wrap_content"`
+            `android:layout_height="wrap_content"`
+            `android:id="@+id/btn2"`
+            `android:layout_weight="1"`
+            `android:text="@string/a12"/>`
+        `<Button`
+            `android:layout_width="wrap_content"`
+            `android:layout_height="wrap_content"`
+            `android:id="@+id/btn3"`
+            `android:text="@string/a13"/>`
 
         <Button
             android:layout_width="wrap_content"
@@ -121,53 +121,53 @@ linear_layout.xml代码：
             android:id="@id/btn4"
             android:text="@string/a44"/>
     </LinearLayout>
-</LinearLayout>
+`</LinearLayout>`
 
 在values文件的strings.xml中设置对应值
 
-<resources>
-    <string name="a11">one,one</string>
-    <string name="a12">one,two</string>
-    <string name="a13">one,three</string>
-    <string name="a14">one,four</string>
-    <string name="a21">two,one</string>
-    <string name="a22">two,two</string>
-    <string name="a23">two,three</string>
-    <string name="a24">two,four</string>
-    <string name="a31">three,one</string>
-    <string name="a32">three,two</string>
-    <string name="a33">three,three</string>
-    <string name="a34">three,four</string>
-    <string name="a41">four,one</string>
-    <string name="a42">four,two</string>
-    <string name="a43">four,three</string>
-    <string name="a44">four,four</string>
-</resources>
+`<resources>`
+    `<string name="a11">one,one</string>`
+    `<string name="a12">one,two</string>`
+    `<string name="a13">one,three</string>`
+    `<string name="a14">one,four</string>`
+    `<string name="a21">two,one</string>`
+    `<string name="a22">two,two</string>`
+    `<string name="a23">two,three</string>`
+    `<string name="a24">two,four</string>`
+    `<string name="a31">three,one</string>`
+    `<string name="a32">three,two</string>`
+    `<string name="a33">three,three</string>`
+    `<string name="a34">three,four</string>`
+    `<string name="a41">four,one</string>`
+    `<string name="a42">four,two</string>`
+    `<string name="a43">four,three</string>`
+    `<string name="a44">four,four</string>`
+`</resources>`
 
 在colors.xml中增加黑颜色的值
 
-<color name="colorBlack">#000000</color>
+`<color name="colorBlack">#000000</color>`
 
 最后将MainActivity中的onCreate方法修改成我们需要的linear_layout.xml
 
-package com.example.test
+`package com.example.test`
 
-import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
+`import android.os.Bundle`
+`import com.google.android.material.snackbar.Snackbar`
+`import androidx.appcompat.app.AppCompatActivity`
+`import android.view.Menu`
+`import android.view.MenuItem`
 
-import kotlinx.android.synthetic.main.activity_main.*
+`import kotlinx.android.synthetic.main.activity_main.*`
 
-class MainActivity : AppCompatActivity() {
+`class MainActivity : AppCompatActivity() {`
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.linear_layout)
     
     }
-}
+`}`
 
 运行试试看吧
 
@@ -177,22 +177,22 @@ class MainActivity : AppCompatActivity() {
 
 创建constraint_layout.xml，代码：
 
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBlack">
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="80dp"
-        android:layout_height="55dp"
-        android:background="@color/colorRed"
-        android:text="Red"
-        android:gravity="center"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+`<?xml version="1.0" encoding="utf-8"?>`
+`<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"`
+    `xmlns:app="http://schemas.android.com/apk/res-auto"`
+    `android:layout_width="match_parent"`
+    `android:layout_height="match_parent"`
+    `android:background="@color/colorBlack">`
+    `<TextView`
+        `android:id="@+id/textView1"`
+        `android:layout_width="80dp"`
+        `android:layout_height="55dp"`
+        `android:background="@color/colorRed"`
+        `android:text="Red"`
+        `android:gravity="center"`
+        `android:textColor="@color/colorBlack"`
+        `app:layout_constraintStart_toStartOf="parent"`
+        `app:layout_constraintTop_toTopOf="parent"/>`
 
     <TextView
         android:layout_width="90dp"
@@ -267,7 +267,7 @@ class MainActivity : AppCompatActivity() {
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-</androidx.constraintlayout.widget.ConstraintLayout>
+`</androidx.constraintlayout.widget.ConstraintLayout>`
 
 使用android:gravity="center"命令使文字居中
 
@@ -322,22 +322,22 @@ class MainActivity : AppCompatActivity() {
 
 来看看代码部分（创建文件table_layout）：
 
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
-    android:shrinkColumns="0"
-    >
-    <TableRow>
-        <TextView
+`<?xml version="1.0" encoding="utf-8"?>`
+`<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"`
+    `android:layout_width="match_parent" android:layout_height="match_parent"`
+    `android:background="@android:color/background_dark"`
+    `android:shrinkColumns="0"`
+    `>`
+    `<TableRow>`
+        `<TextView
             android:id="@+id/blank"
             android:text="   "
-            android:textColor="@color/colorGray" />
-        <TextView
-            android:id="@+id/text1"
-            android:layout_weight="1"
-            android:text="@string/open"
-            android:textColor="@color/colorGray" />
+            android:textColor="@color/colorGray" />`
+        `<TextView`
+            `android:id="@+id/text1"`
+            `android:layout_weight="1"`
+            `android:text="@string/open"`
+            `android:textColor="@color/colorGray" />`
 
         <TextView
             android:id="@+id/text2"
@@ -439,11 +439,11 @@ class MainActivity : AppCompatActivity() {
 
     </TableRow>
 
-</TableLayout>
+`</TableLayout>`
 
 在value中colos.xml添加
 
-<color name="colorGray">#999999</color>
+`<color name="colorGray">#999999</color>`
 
 一开始我将字符串放入strings.xml但是这个实验字符串太多了一个一个弄太麻烦了，后面直接写在代码里了
 
