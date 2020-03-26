@@ -1,4 +1,25 @@
 <resources>
     <string name="app_name">test</string>
     <string name="action_settings">Settings</string>
+    <string name="a11">one,one</string>
+    <string name="a12">one,two</string>
+    <string name="a13">one,three</string>
+    <string name="a14">one,four</string>
+    <string name="a21">two,one</string>
+    <string name="a22">two,two</string>
+    <string name="a23">two,three</string>
+    <string name="a24">two,four</string>
+    <string name="a31">three,one</string>
+    <string name="a32">three,two</string>
+    <string name="a33">three,three</string>
+    <string name="a34">three,four</string>
+    <string name="a41">four,one</string>
+    <string name="a42">four,two</string>
+    <string name="a43">four,three</string>
+    <string name="a44">four,four</string>
+    <string name="open">open...</string>
+    <string name="ctrl">ctrl - o</string>
+    <string name="save">save...</string>
+    <string name="ctrls">ctrl - s</string>
+
 </resources>
