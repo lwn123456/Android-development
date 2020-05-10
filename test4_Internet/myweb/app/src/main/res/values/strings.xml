@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">网页</string>
+    <string name="web_url">请输入网址</string>
+</resources>

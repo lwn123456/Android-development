@@ -6,3 +6,5 @@
 
 [实验3：Android_UI](./test3_Android_UI/)
 
+[实验4：Internet](./test4_Internet/)
+
